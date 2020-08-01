@@ -1,0 +1,266 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  /* margin-top: -15vh; */
+  font-family: 'Rowdies', cursive;
+  font-size: 30px;
+  color: rgba(124, 124, 124, 0.582);
+
+}
+
+a:link, 
+a:visited {
+  color: #111;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 10vh; */
+}
+
+.footer {
+  margin-top: 35vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.chords {
+  display: flex;
+  justify-content: center;
+}
+
+.chordControls {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* .chordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+
+.chordLabel {
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+  padding: 2rem 1rem;
+  color: rgba(61, 64, 91);
+  transition: 0.2s all;
+  cursor: text;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+
+.chordInput {
+  max-width: 7rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 30px;
+  background-color: white;
+  text-align: center;
+
+  width:100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid rgba(61, 64, 91);
+  box-shadow: none;
+  color: #111;
+}
+
+
+.chordInput:invalid {
+  outline: 0;
+}
+
+.chordInput:focus,
+.chordInput:valid {
+  border-color: rgb(231, 111, 81);
+}
+
+.chordInput:focus~.chordLabel,
+.chordInput:valid~.chordLabel{
+  font-size: 14px;
+  top: -24px;
+  color: rgb(231, 111, 81);
+}
+
+.chordInput:valid.chordLabel {
+  opacity: 0;
+}
+
+
+
+
+
+.chordOne,
+ .chordTwo {
+  position: relative;
+  line-height: 5vh;
+  display: inline-block;
+  
+}
+
+.chordPicker {
+  display: flex;
+  justify-content: center;
+}
+
+.controlButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resetBtn {
+  margin-bottom: -30vh;
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.resetIt {
+  border: 2px solid rgb(243, 84, 44);
+  background-color: rgb(236, 75, 34);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  -webkit-transition: ease-out .6s;
+  transition: ease-out .6s;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  outline: none;
+}
+
+.resetIt:active {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486), 0 6px 6px rgba(0,0,0,0.23);
+  transform: translateY(10px);
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+}
+
+.controlBtn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 3rem;
+  margin: 30px;
+  margin-bottom: -10rem;
+
+  border: 2px solid rgb(92, 100, 219);
+  background-color: rgb(92, 100, 219);
+  color: white;
+  
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+  outline: none;
+}
+
+.controlBtn:active {
+  border: 2px solid rgb(68, 38, 136);
+  background-color: rgb(63, 39, 167);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486), 0 6px 6px rgba(0,0,0,0.23);
+  transform: translateY(10px);
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+  outline: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+
+
+
+/* Switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 60px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(92, 100, 219);
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 60px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+input:checked + .slider {
+  background: rgb(92, 100, 219);
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  outline: none;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(36, 40, 97);
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  outline: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translate(60px);
+}
+
+/*# sourceMappingURL=/style.251b6741.css.map */
