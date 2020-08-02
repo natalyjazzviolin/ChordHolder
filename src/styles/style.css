@@ -125,7 +125,8 @@ a:visited {
 
 .controlButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
 .resetBtn {
@@ -133,6 +134,7 @@ a:visited {
   margin-top: 25vh;
   display: flex;
   justify-content: center;
+  position: absolute;
   
 }
 
