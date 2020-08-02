@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="Description" content="Chord Holder - an app that allows to play and switch between two chords of your choice.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/style.css">
@@ -25,17 +26,17 @@
     <div class="chordControls">
       <div class="controlContainer">
         <div class="chordPicker">
-          <label  class="switch">
+          <label  name="Chord picker" class="switch">
           <input  type="checkbox" id="chordPicker" >
           <span class="slider"></span>
           </label>
         </div>
         <div class="controlButtons">
-          <button  class="controlBtn" id="playBtn"><i class="fa fa-play icon" aria-hidden="true"></i></button>
-          <button value="stop" class="controlBtn" id="stopBtn"><i class="fa fa-stop icon" aria-hidden="true"></i></button>
+          <button name="play" class="controlBtn" id="playBtn"><i class="fa fa-play icon" aria-hidden="true"></i></button>
+          <button name="stop" value="stop" class="controlBtn" id="stopBtn"><i class="fa fa-stop icon" aria-hidden="true"></i></button>
         </div> 
         <div class="resetBtn" id="resetBtn">
-          <button class="resetIt">Reset</button>
+          <button name="reset" class="resetIt">Reset</button>
         </div>
       </div>
     </div>  

@@ -9,7 +9,7 @@ h2 {
   /* margin-top: -15vh; */
   font-family: 'Rowdies', cursive;
   font-size: 30px;
-  color: rgba(124, 124, 124, 0.582);
+  color: rgba(124, 124, 124, 0.945);
 
 }
 
@@ -269,6 +269,14 @@ input:checked + .slider:before {
   -webkit-transform: translateX(60px);
   -ms-transform: translateX(60px);
   transform: translate(60px);
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
 }
 
 /*# sourceMappingURL=/style.251b6741.css.map */
