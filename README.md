@@ -19,4 +19,4 @@ If you find any problems or have feature requests, please open an issue or submi
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## ⭐ Credits
-Made with ❤️ by [Nataly Merezhuk](https://github.com/natalyjazzviolin)
+Made with ❤️ by [Nataly Merezhuk](https://nataly.dev)
